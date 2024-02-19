@@ -26,7 +26,6 @@ def write_csv(write_path):
         for row in rows:
             if row[2] in grades:
                 row[-1] = grades[row[2]]
-        print(rows)
 
         with open(write_path, 'w', newline='') as file:
             writer = csv.writer(file)
